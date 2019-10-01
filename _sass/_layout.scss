@@ -42,10 +42,15 @@ footer {
 
 section {
   padding-top: 48px;
+  margin: 0 2%;
   
   .themes {
     display: flex;
     align-items: flex-end;
+    
+    h1 {
+      text-align: center;
+    }
 
     article {
       padding: 0 2%;
@@ -58,6 +63,12 @@ section {
       img {
         max-width: 100%;
       }
+    }
+  }
+  
+  .contact {
+    h1 {
+      display: none;
     }
   }
 }
