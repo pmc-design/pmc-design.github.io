@@ -1,0 +1,7 @@
+title: Single Page Template
+description: Un template pour déployer rapidement un site simple type SinglePage
+url: https://dorianbayart.github.io/SinglePageTemplate/
+
+sass:
+  style: compact # possible values: nested expanded compact compressed
+  

@@ -1,0 +1,48 @@
+
+body {
+  display: flex;
+  flex-flow: column;
+  max-width: 980px;
+  min-height: -webkit-fill-available;
+  margin: auto;
+}
+
+footer {
+  flex-grow: 1;
+  display: flex;
+  
+  .footer {
+    align-self: flex-end;
+  }
+}
+
+form#contact {
+  display: flex;
+  align-items: center;
+  
+  .contact-img {
+    flex-grow: 1;
+    max-width: 30%;
+    text-align: end;
+    padding: 5%;
+    
+    img {
+      width: 75%;
+      max-width: 140px;
+    }
+  }
+  
+  .contact-form {
+    flex-grow: 1;
+    margin: auto;
+    max-width: 450px;
+    
+    fieldset {
+      border: transparent;
+      
+      input, select, textarea, button {
+        width: 100%;
+      }
+    }
+  }
+}
