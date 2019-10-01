@@ -7,6 +7,14 @@ body {
   margin: auto;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(250,250,250,0.98);
+  padding: 1rem;
+  border-radius: 0 0 15px 15px;
+}
+
 footer {
   flex-grow: 1;
   display: flex;
