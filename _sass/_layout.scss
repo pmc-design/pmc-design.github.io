@@ -85,6 +85,13 @@ section#themes {
 
       img {
         max-width: 100%;
+        opacity: 0.8;
+        transition: transform .5s ease;
+      }
+      
+      img:hover {
+        opacity: 1;
+        transform: scale(1.1);
       }
     }
   }
