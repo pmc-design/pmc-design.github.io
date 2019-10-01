@@ -16,19 +16,21 @@ footer {
   }
 }
 
-section.themes {
-  display: flex;
-  align-items: flex-end;
-  
-  article {
-    margin: 0 1rem;
-    
-    .titre {
-      
-    }
-    
-    img {
-      max-width: 100%;
+section {
+  .themes {
+    display: flex;
+    align-items: flex-end;
+
+    article {
+      margin: 0 1rem;
+
+      .titre {
+
+      }
+
+      img {
+        max-width: 100%;
+      }
     }
   }
 }
