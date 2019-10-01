@@ -46,36 +46,35 @@ section {
 }
 
 section#themes {
+  h1 {
+      text-align: center;
+      overflow: hidden;
+    }
+
+  h1:before, h1:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+  }
+
+  h1:before {
+    right: 0.5em;
+    margin-left: -10%;
+  }
+
+  h1:after {
+    left: 0.5em;
+    margin-right: -10%;
+  }
+  
   .themes {
     display: flex;
     align-items: flex-end;
     
-    h1 {
-      text-align: center;
-      overflow: hidden;
-    }
-    
-h1:before,
-h1:after {
-  background-color: #000;
-  content: "";
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: middle;
-  width: 10%;
-}
-
-h1:before {
-  right: 0.5em;
-  margin-left: -10%;
-}
-
-h1:after {
-  left: 0.5em;
-  margin-right: -10%;
-}
-
     article {
       padding: 0 2%;
       width: 20%;
