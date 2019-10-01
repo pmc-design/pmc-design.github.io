@@ -42,7 +42,11 @@ footer {
 
 section {
   padding-top: 48px;
-  margin: 0 2%;
+  margin: 0 2% 24px;
+  
+  h1 {
+    margin-bottom: 18px;
+  }
 }
 
 section#themes {
@@ -81,6 +85,8 @@ section#themes {
 
       .titre {
         text-align: center;
+        margin-bottom: 12px;
+        line-height: 1.2;
       }
 
       img {
@@ -116,6 +122,7 @@ form#contact {
     img {
       width: 75%;
       max-width: 140px;
+      opacity: 0.6;
     }
   }
   
