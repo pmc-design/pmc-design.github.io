@@ -1,22 +1,16 @@
-<form id="contact" action="mailto:p.margerie4-pmcdesign@gmail.com" method="post" enctype="text/plain">
+<form id="contact" action="mailto:p.margerie4-pmcdesign@gmail.com" method="GET" enctype="text/plain">
   <div class="contact-img">
     <img src="{{ '/assets/img/letter-147563_960_720[1].png' | relative_url }}">
   </div>
   <div class="contact-form">
     <fieldset>
-      <input placeholder="Votre nom" type="text" name="name" tabindex="1" required>
+      <input placeholder="Objet" type="text" name="subject" tabindex="1" required>
     </fieldset>
     <fieldset>
-      <input placeholder="Votre email" type="email" name="email" tabindex="2" required>
+      <textarea placeholder="Votre message ..." name="body" tabindex="2" required></textarea>
     </fieldset>
     <fieldset>
-      <input placeholder="Sujet" type="text" name="subject" tabindex="3" required>
-    </fieldset>
-    <fieldset>
-      <textarea placeholder="Votre message ..." name="message" tabindex="4" required></textarea>
-    </fieldset>
-    <fieldset>
-      <button type="submit" id="contact-submit" data-submit="...Envoi">Envoyer</button>
+      <button type="submit" id="contact-submit">Envoyer</button>
     </fieldset>
   </div>
 </form>
