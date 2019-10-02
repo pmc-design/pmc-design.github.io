@@ -31,12 +31,14 @@ header {
       width: 20%;
       min-width: 100px;
       text-align: center;
+      text-shadow: 0px 0px 2px black;
     }
     
     a:hover {
       color: black;
       background-color: whitesmoke;
       border-radius: 15px;
+      text-shadow: unset;
     }
   }
 }
@@ -86,6 +88,7 @@ section {
   
   h1 {
     margin-bottom: 18px;
+    text-shadow: 0px 0px 12px white;
   }
 }
 
@@ -133,6 +136,7 @@ section#themes {
         max-width: 100%;
         opacity: 0.8;
         transition: transform .5s ease;
+        box-shadow: 3px 3px 12px grey;
       }
       
       img:hover {
@@ -176,6 +180,8 @@ form#contact {
       
       input, select, textarea, button {
         width: 100%;
+        padding: 4px;
+        box-shadow: 3px 3px 12px grey;
       }
     }
   }
