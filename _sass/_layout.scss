@@ -199,6 +199,11 @@ form#contact {
 }
 
 @media only screen and (max-device-width: 720px) {
+  body {
+    background: -webkit-linear-gradient(30deg, white, #00000024);
+    background:         linear-gradient(30deg, white, #00000024);
+  }
+  
   header {
     padding: 6px;
     
