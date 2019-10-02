@@ -25,6 +25,10 @@ header {
     align-items: center;
     flex-wrap: wrap;
     
+    span {
+      flex-grow: 1;
+    }
+    
     a {
       color: inherit;
       text-decoration: none;
