@@ -35,9 +35,14 @@ header {
 footer {
   flex-grow: 1;
   display: flex;
+  background-color: rgba(250,250,250,0.98);
+  border-radius: 15px 15px 0 0;
+  padding: 12px;
+  align-items: flex-end;
   
   .footer {
-    align-self: flex-end;
+    flex-grow: 1;
+    text-align: center;
   }
 }
 
