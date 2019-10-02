@@ -46,17 +46,26 @@ footer {
   align-items: flex-end;
   
   .footer {
+    display: flex;
     flex-grow: 1;
     text-align: center;
+    
+    span {
+      flex-grow: 1;
+      text-align: end;
+    }
     
     a {
       display: inline-flex;
       align-items: center;
+      flex-grow: 1;
+      text-align: start;
       color: inherit;
       text-decoration: none;
       
       img {
-        padding-right: 3px;
+        margin-left: 3px;
+        margin-right: 3px;
       }
     }
     
