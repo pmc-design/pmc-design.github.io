@@ -1,4 +1,14 @@
 
 body {
   font-family: Source Sans Pro;
+  
+  footer {
+    font-size: smaller;
+  }
+}
+
+@media only screen and (min-device-width: 720px) {
+  body {
+    font-size: 120%;
+  }
 }
