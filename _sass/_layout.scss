@@ -5,7 +5,8 @@ body {
   max-width: 980px;
   min-height: -webkit-fill-available;
   margin: auto;
-  background-image: linear-gradient(60deg, white, #0000005c);
+  background: -webkit-linear-gradient(30deg, white, #0000005c);
+  background:         linear-gradient(30deg, white, #0000005c);
 }
 
 header {
