@@ -25,6 +25,7 @@ scrollToElementId(getAnchor());
 //}
 
 function scrollToElementId(elementId) {
+    console.log(elementId);
   var element = document.getElementById(elementId);
   if(element) element.scrollIntoView({behavior: "smooth"});
 }
