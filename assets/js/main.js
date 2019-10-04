@@ -1,8 +1,10 @@
-document.addEventListener('DOMContentLoaded', function(){ 
+/*document.addEventListener('DOMContentLoaded', function(){ 
     scrollToElementId(getAnchor());
-  }, false);
+  }, false);*/
 
-window.onload = function(e){
+scrollToElementId(getAnchor());
+
+//window.onload = function(e){
   
   
   
@@ -20,7 +22,7 @@ window.onload = function(e){
     
   }, false);
   
-}
+//}
 
 function scrollToElementId(elementId) {
   var element = document.getElementById(elementId);
