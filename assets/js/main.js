@@ -1,9 +1,10 @@
+document.addEventListener('DOMContentLoaded', function(){ 
+    scrollToElementId(getAnchor());
+  }, false);
 
 window.onload = function(e){
   
-  document.addEventListener('DOMContentLoaded', function(){ 
-    scrollToElementId(getAnchor());
-  }, false);
+  
   
   document.addEventListener('click', function (event) {
     // click on a header link
