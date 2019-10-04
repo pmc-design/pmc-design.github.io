@@ -19,7 +19,7 @@ window.onload = function(e){
 }
 
 function scrollToElementId(elementId) {
-  var element = document.getElementById(id);
+  var element = document.getElementById(elementId);
   if(element) element.scrollIntoView({behavior: "smooth"});
 }
 
