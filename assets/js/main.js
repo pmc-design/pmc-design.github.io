@@ -1,6 +1,9 @@
 
 window.onload = function(e){
-  scrollToElementId(getAnchor());
+  
+  document.addEventListener('DOMContentLoaded', function(){ 
+    scrollToElementId(getAnchor());
+  }, false);
   
   document.addEventListener('click', function (event) {
     // click on a header link
@@ -25,6 +28,6 @@ function scrollToElementId(elementId) {
 
 function getAnchor() {
   var currentUrl = document.URL,
-  urlParts   = currentUrl.split('#');
+  urlParts = currentUrl.split('#');
   return (urlParts.length > 1) ? urlParts[1] : null;
 }
