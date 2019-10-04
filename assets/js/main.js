@@ -1,14 +1,6 @@
-/*document.addEventListener('DOMContentLoaded', function(){ 
-    scrollToElementId(getAnchor());
-  }, false);*/
-
 scrollToElementId(getAnchor());
 
-//window.onload = function(e){
-  
-  
-  
-  document.addEventListener('click', function (event) {
+document.addEventListener('click', function (event) {
     // click on a header link
     if( event.target.matches('.header a') ) {
       // Don't follow the link
@@ -17,13 +9,14 @@ scrollToElementId(getAnchor());
       var id = event.target.attributes.href.value.slice(1);
       scrollToElementId(id);
     }
-    
-    // other click to manage ...
-    
-  }, false);
-  
-//}
 
+    // other click to manage ...
+
+}, false);
+
+/**************
+*  Functions  *
+**************/
 function scrollToElementId(elementId) {
     console.log(elementId);
   var element = document.getElementById(elementId);
