@@ -168,43 +168,45 @@ section#themes {
 
 section#contact {
   h1 {
-    display: none;
+    
   }
-}
+  
+  .content form#contact {
+    display: flex;
+    align-items: center;
 
-form#contact {
-  display: flex;
-  align-items: center;
-  
-  .contact-img {
-    flex-grow: 1;
-    max-width: 30%;
-    text-align: end;
-    padding: 5%;
-    
-    img {
-      width: 75%;
-      max-width: 140px;
-      opacity: 0.6;
+    .contact-img {
+      flex-grow: 1;
+      max-width: 30%;
+      text-align: end;
+      padding: 5%;
+
+      img {
+        width: 75%;
+        max-width: 140px;
+        opacity: 0.6;
+      }
     }
-  }
-  
-  .contact-form {
-    flex-grow: 1;
-    margin: auto;
-    max-width: 450px;
-    
-    fieldset {
-      border: transparent;
-      
-      input, select, textarea, button {
-        width: 100%;
-        padding: 8px;
-        box-shadow: 3px 3px 12px grey;
+
+    .contact-form {
+      flex-grow: 1;
+      margin: auto;
+      max-width: 450px;
+
+      fieldset {
+        border: transparent;
+
+        input, select, textarea, button {
+          width: 100%;
+          padding: 8px;
+          box-shadow: 3px 3px 12px grey;
+        }
       }
     }
   }
 }
+
+
 
 // on small screens
 @media only screen and (max-device-width: 560px) {
