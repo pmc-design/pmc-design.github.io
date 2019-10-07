@@ -16,15 +16,18 @@ header {
   z-index: 100;
   color: whitesmoke;
   background-color: rgba(130, 130, 130, 0.95);
-  border-radius: 0 0 15px 15px;
-  padding: 12px;
+  border-radius: 0 0 24px 24px;
   font-weight: bolder;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
   
   .header {
     display: flex;
     flex-flow: row;
+    flex-grow: 1;
     align-items: center;
-    flex-wrap: wrap;
     
     span {
       flex-grow: 1;
@@ -33,9 +36,7 @@ header {
     a {
       color: inherit;
       text-decoration: none;
-      width: 20%;
-      min-width: 100px;
-      padding: 0 6px;
+      width: 18%;
       text-align: center;
       text-shadow: 0px 0px 2px black;
     }
@@ -43,7 +44,7 @@ header {
     a:hover {
       color: black;
       background-color: whitesmoke;
-      border-radius: 15px;
+      border-radius: 24px;
       text-shadow: unset;
     }
   }
@@ -52,7 +53,7 @@ header {
 footer {
   flex-grow: 1;
   display: flex;
-  padding: 12px 0 0;
+  padding: 16px 0 0;
   align-items: flex-end;
   
   .footer {
@@ -74,8 +75,8 @@ footer {
       text-decoration: none;
       
       img {
-        margin-left: 3px;
-        margin-right: 3px;
+        margin-left: 4px;
+        margin-right: 4px;
       }
     }
     
@@ -87,18 +88,18 @@ footer {
 }
 
 section {
-  padding-top: 48px;
-  margin: 0 2% 24px;
+  padding-top: 128px;
+  margin: -56px 24px 24px;
   
   h1 {
-    margin-bottom: 18px;
+    margin-bottom: 24px;
     text-shadow: 0px 0px 12px white;
   }
 }
 
 section#principal {
   .content {
-    padding: 6px 12px;
+    padding: 8px 16px;
     border-left: 1px solid grey;
   }
 }
@@ -120,12 +121,12 @@ section#themes {
   }
 
   h1:before {
-    right: 0.5em;
+    right: 24px;
     margin-left: -10%;
   }
 
   h1:after {
-    left: 0.5em;
+    left: 24px;
     margin-right: -10%;
   }
   
@@ -134,12 +135,12 @@ section#themes {
     align-items: flex-end;
     
     article {
-      padding: 0 2%;
+      padding: 0 16px;
       width: 20%;
 
       .titre {
         text-align: center;
-        margin-bottom: 12px;
+        margin-bottom: 16px;
         line-height: 1.2;
       }
 
@@ -191,7 +192,7 @@ form#contact {
       
       input, select, textarea, button {
         width: 100%;
-        padding: 4px;
+        padding: 8px;
         box-shadow: 3px 3px 12px grey;
       }
     }
@@ -205,12 +206,11 @@ form#contact {
   }
   
   header {
-    padding: 6px;
-    
     .header {
       a {
         width: unset;
         min-width: unset;
+        flex-grow: 1;
       }
     }
   }
