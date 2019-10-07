@@ -133,10 +133,15 @@ section#themes {
   .themes {
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
     
     article {
       padding: 0 16px;
       width: 20%;
+      min-width: 120px;
+      flex: auto;
+      flex-grow: 0;
+      margin: 8px auto;
 
       .titre {
         text-align: center;
@@ -206,6 +211,8 @@ form#contact {
   }
   
   header {
+    padding: 8px 8px;
+    
     .header {
       a {
         width: unset;
