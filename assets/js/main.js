@@ -18,9 +18,7 @@ document.addEventListener('click', function (event) {
 *  Functions  *
 **************/
 function scrollToElementId(elementId) {
-    console.log(elementId);
   var element = document.getElementById(elementId);
-    console.log(element);
   if(element) element.scrollIntoView({behavior: "smooth"});
 }
 
