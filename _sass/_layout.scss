@@ -100,10 +100,25 @@ section {
 }
 
 section#principal {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  img {
+    flex-grow: 1;
+    width: 20%;
+    padding: 0 24px;
+    min-width: 128px;
+    max-width: 256px;
+    margin: auto;
+  }
+  
   .content {
     padding: 8px 16px;
     border-left: 1px solid grey;
     text-align: justify;
+    flex-grow: 1;
+    width: 75%;
   }
 }
 
