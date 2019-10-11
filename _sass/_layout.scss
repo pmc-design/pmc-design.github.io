@@ -150,6 +150,7 @@ section#themes {
       flex: 20%;
       flex-grow: 0;
       margin: 8px auto;
+      z-index: 10;
 
       .titre {
         text-align: center;
@@ -166,6 +167,9 @@ section#themes {
         opacity: 1;
         transform: scale(1.2);
       }
+    }
+    article:hover {
+      z-index: 20;
     }
   }
 }
