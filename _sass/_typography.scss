@@ -2,8 +2,41 @@
 body {
   font-family: Source Sans Pro;
   
+  header {
+    font-weight: bolder;
+    
+    a {
+      text-shadow: 0px 0px 2px black;
+    }
+    a:hover {
+      text-shadow: unset;
+    }
+  }
+  
   footer {
     font-size: 80%;
+  }
+  
+  h1 {
+    text-shadow: 0px 0px 12px white;
+  }
+  
+  a, a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  article .titre {
+    font-style: italic;
+    line-height: 1.2;
+  }
+  
+  fieldset {
+    font-style: italic;
+    
+    button {
+      font-style: normal;
+    }
   }
 }
 
