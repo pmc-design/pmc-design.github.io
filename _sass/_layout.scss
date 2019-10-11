@@ -145,11 +145,11 @@ section#themes {
     flex-wrap: wrap;
     
     article {
-      padding: 0 8px;
+      padding: 0 4px;
       min-width: 120px;
       flex: 20%;
       flex-grow: 0;
-      margin: 8px auto;
+      margin: 24px auto 0;
       z-index: 10;
 
       .titre {
@@ -166,7 +166,7 @@ section#themes {
       
       img:hover {
         opacity: 1;
-        transform: scale(1.2);
+        transform: scale(1.3);
       }
     }
     article:hover {
