@@ -145,12 +145,13 @@ section#themes {
     flex-wrap: wrap;
     
     article {
-      padding: 0 4px;
-      min-width: 120px;
+      z-index: 10;
       flex: 20%;
       flex-grow: 0;
+      min-width: 120px;
       margin: 24px auto 0;
-      z-index: 10;
+      padding: 0 4px;
+      align-self: baseline;
 
       .titre {
         text-align: center;
