@@ -3,7 +3,6 @@ body {
   display: flex;
   flex-flow: column;
   max-width: 980px;
-  min-height: -webkit-fill-available;
   margin: auto;
   background:         linear-gradient(30deg, white, #b5b5b5d4), url(../img/background.png);
   background: -webkit-linear-gradient(30deg, white, #b5b5b5d4), url(../img/background.png);
