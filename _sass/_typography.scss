@@ -44,8 +44,20 @@ body {
   }
 }
 
+// on big screens
 @media only screen and (min-device-width: 720px) {
   body {
     font-size: 120%;
+  }
+}
+
+// on small screens
+@media only screen and (max-device-width: 560px) {
+  header {
+    font-size: small;
+  }
+  
+  footer {
+    font-size: 75%;
   }
 }
