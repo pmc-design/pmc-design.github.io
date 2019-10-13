@@ -53,11 +53,13 @@ body {
 
 // on small screens
 @media only screen and (max-device-width: 560px) {
-  header {
-    font-size: small;
-  }
-  
-  footer {
-    font-size: 75%;
+  body {
+    header {
+      font-size: small;
+    }
+
+    footer {
+      font-size: 75%;
+    }
   }
 }
