@@ -25,6 +25,8 @@ body {
   section {
     h1 {
       text-shadow: 0px 0px 12px white;
+      font-weight: normal;
+      font-family: 'Pacifico', cursive;
     }
     
     article .titre {
@@ -37,14 +39,6 @@ body {
 
       button {
         font-style: normal;
-      }
-    }
-  }
-  
-  section#principal {
-    .content {
-      h1 {
-        font-family: 'Pacifico', cursive;
       }
     }
   }
