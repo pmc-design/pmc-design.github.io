@@ -54,24 +54,28 @@ footer {
   align-items: flex-end;
   
   .footer {
-    display: flex;
-    flex-grow: 1;
-    text-align: center;
     
-    span {
+    
+    div {
+      display: flex;
       flex-grow: 1;
-      text-align: end;
-    }
-    
-    a {
-      display: inline-flex;
-      align-items: center;
-      text-align: start;
-      padding-right: 4px;
+      text-align: center;
       
-      img {
-        margin-left: 4px;
-        margin-right: 4px;
+      span {
+        flex-grow: 1;
+        text-align: end;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        text-align: start;
+        padding-right: 4px;
+
+        img {
+          margin-left: 4px;
+          margin-right: 4px;
+        }
       }
     }
     
