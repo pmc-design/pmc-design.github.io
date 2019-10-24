@@ -54,16 +54,12 @@ footer {
   align-items: flex-end;
   
   .footer {
-    
-    
     div {
       display: flex;
-      flex-grow: 1;
       text-align: center;
       
       span {
         flex-grow: 1;
-        text-align: end;
       }
 
       a {
@@ -277,4 +273,9 @@ section#aPropos {
       }
     }
   }
+}
+
+/* Helpers */
+.text-align-end {
+  text-align: end;
 }
