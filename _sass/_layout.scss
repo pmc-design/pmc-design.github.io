@@ -54,6 +54,8 @@ footer {
   align-items: flex-end;
   
   .footer {
+    flex-grow: 1;
+    
     div {
       display: flex;
       text-align: center;
