@@ -9,6 +9,15 @@ document.addEventListener('click', function (event) {
       var id = event.target.attributes.href.value.slice(1);
       scrollToElementId(id);
     }
+    
+    // click on a contact link
+    if( event.target.matches('a.contact-link') ) {
+      // Don't follow the link
+      event.preventDefault();
+
+      var id = event.target.attributes.href.value.slice(1);
+      scrollToElementId(id);
+    }
 
     // other click to manage ...
 
