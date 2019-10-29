@@ -3,7 +3,7 @@ body {
   display: flex;
   flex-flow: column;
   max-width: 980px;
-  margin: auto;
+  margin: 24px auto;
   background:         linear-gradient(30deg, white, #b5b5b5d4), url(../img/background.png);
   background: -webkit-linear-gradient(30deg, white, #b5b5b5d4), url(../img/background.png);
   background-size: contain;
@@ -17,7 +17,7 @@ header {
   z-index: 1000;
   color: whitesmoke;
   background-color: rgba(130, 130, 130, 0.95);
-  border-radius: 0 0 24px 24px;
+  border-radius: 8px;
   height: 56px;
   display: flex;
   align-items: center;
@@ -42,7 +42,7 @@ header {
     a:hover {
       color: black;
       background-color: whitesmoke;
-      border-radius: 24px;
+      border-radius: 4px;
     }
   }
 }
@@ -85,7 +85,7 @@ footer {
 
 section {
   padding-top: 128px;
-  margin: -56px 24px 24px;
+  margin: -80px 24px 24px;
   
   h1 {
     margin-bottom: 24px;
