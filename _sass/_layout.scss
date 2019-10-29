@@ -14,7 +14,7 @@ header {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   color: whitesmoke;
   background-color: rgba(130, 130, 130, 0.95);
   border-radius: 0 0 24px 24px;
@@ -96,6 +96,7 @@ section#principal {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  z-index: 200;
   
   img {
     flex-grow: 1;
@@ -120,6 +121,8 @@ section#principal {
 }
 
 section#themes {
+  z-index: 180;
+  
   h1 {
       text-align: center;
       overflow: hidden;
@@ -187,7 +190,12 @@ section#themes {
   }
 }
 
+section#galerie {
+  z-index: 160;
+}
+
 section#contact {
+  z-index: 140;
   
   .content form {
     display: flex;
@@ -225,6 +233,8 @@ section#contact {
 }
 
 section#aPropos {
+  z-index: 120;
+  
   .content {
     text-align: justify;
   }
