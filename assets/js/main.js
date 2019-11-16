@@ -1,5 +1,19 @@
 scrollToElementId(getAnchor());
 
+/*setTimeout(function(){
+        let element = document.getElementById('animated-thumbnails');
+        console.log(element);
+        lightGallery(document.getElementById('animated-thumbnails'), {
+            thumbnail:true,
+            download:false
+        });
+    }, 3000);*/
+
+lightGallery(document.getElementById('animated-thumbnails'), {
+    thumbnail:true,
+    download:false
+});
+
 document.addEventListener('click', function (event) {
     // click on a header link
     if( event.target.matches('.header a') ) {
@@ -21,14 +35,7 @@ document.addEventListener('click', function (event) {
 
     // other click to manage ...
     
-    setTimeout(function(){
-        let element = document.getElementById('animated-thumbnails');
-        console.log(element);
-        lightGallery(element, {
-            thumbnail:true,
-            download:false
-        });
-    }, 3000);
+    
     
 
 }, false);
