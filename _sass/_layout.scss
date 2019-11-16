@@ -196,6 +196,12 @@ section#themes {
 
 section#galerie {
   z-index: 160;
+  
+  #animated-thumbnails {
+    img {
+      width:15%;
+    }
+  }
 }
 
 section#contact {
