@@ -21,9 +21,13 @@ document.addEventListener('click', function (event) {
 
     // other click to manage ...
     
-    lightGallery(document.getElementById('animated-thumbnails'), {
-        thumbnail:true
-    });
+    setTimeout(function(){
+        lightGallery(document.getElementById('animated-thumbnails'), {
+            thumbnail:true,
+            download:false
+        });
+    }, 3000);
+    
 
 }, false);
 
