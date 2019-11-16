@@ -1,16 +1,5 @@
 scrollToElementId(getAnchor());
 
-/*setTimeout(function(){
-        let element = document.getElementById('animated-thumbnails');
-        console.log(element);
-        lightGallery(document.getElementById('animated-thumbnails'), {
-            thumbnail:true,
-            download:false
-        });
-    }, 3000);*/
-
-
-
 document.addEventListener('DOMContentLoaded', (event) => {
   lightGallery(document.getElementById('animated-thumbnails'), {
     thumbnail:true,
@@ -39,9 +28,6 @@ document.addEventListener('click', function (event) {
 
     // other click to manage ...
     
-    
-    
-
 }, false);
 
 /**************
