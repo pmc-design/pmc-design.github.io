@@ -198,8 +198,18 @@ section#galerie {
   z-index: 160;
   
   #animated-thumbnails {
-    img {
-      width:15%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    a {
+      display: inline-flex;
+      max-width: 12%;
+      
+      img {
+        object-fit: cover;
+        border-radius: 4px;
+        border: whitesmoke 1px solid;
+      }
     }
   }
 }
