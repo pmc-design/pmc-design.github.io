@@ -200,10 +200,12 @@ section#galerie {
   #animated-thumbnails {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     
     a {
       display: inline-flex;
       width: 12%;
+      max-height: 
       
       img {
         object-fit: cover;
