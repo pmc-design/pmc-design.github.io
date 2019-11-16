@@ -9,10 +9,14 @@ scrollToElementId(getAnchor());
         });
     }, 3000);*/
 
-lightGallery(document.getElementById('animated-thumbnails'), {
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  lightGallery(document.getElementById('animated-thumbnails'), {
     thumbnail:true,
     download:false
-});
+  });
+})
 
 document.addEventListener('click', function (event) {
     // click on a header link
