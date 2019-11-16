@@ -20,6 +20,10 @@ document.addEventListener('click', function (event) {
     }
 
     // other click to manage ...
+    
+    lightGallery(document.getElementById('animated-thumbnails'), {
+        thumbnail:true
+    });
 
 }, false);
 
