@@ -22,7 +22,9 @@ document.addEventListener('click', function (event) {
     // other click to manage ...
     
     setTimeout(function(){
-        lightGallery(document.getElementById('animated-thumbnails'), {
+        let element = document.getElementById('animated-thumbnails');
+        console.log(element);
+        lightGallery(element, {
             thumbnail:true,
             download:false
         });
