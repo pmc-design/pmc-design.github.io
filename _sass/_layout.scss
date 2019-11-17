@@ -204,8 +204,9 @@ section#galerie {
     
     a {
       display: inline-flex;
+      flex-grow: 1;
       width: 12%;
-      max-height: 120px;
+      max-height: 80px;
       
       img {
         object-fit: cover;
