@@ -197,6 +197,31 @@ section#themes {
 section#galerie {
   z-index: 160;
   
+  h1 {
+      text-align: center;
+      overflow: hidden;
+    }
+
+  h1:before, h1:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+  }
+
+  h1:before {
+    right: 24px;
+    margin-left: -10%;
+  }
+
+  h1:after {
+    left: 24px;
+    margin-right: -10%;
+  }
+  
   #animated-thumbnails {
     column-count: 5;
     column-gap: 0;
