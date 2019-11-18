@@ -25,6 +25,19 @@ document.addEventListener('click', function (event) {
       var id = event.target.attributes.href.value.slice(1);
       scrollToElementId(id);
     }
+  
+    // click on gallery expand button
+    if( event.target.matches('#gallery-expand-button') ) {
+      // Don't follow the link
+      event.preventDefault();
+
+      var gallery = document.getElementById('animated-thumbnails');
+      if (gallery.classList.contains('full')) {
+        gallery.classList.remove('full');
+      } else {
+        gallery.classList.add('full');
+      }
+    }
 
     // other click to manage ...
     
