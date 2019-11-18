@@ -198,20 +198,33 @@ section#galerie {
   z-index: 160;
   
   #animated-thumbnails {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    column-count: 5;
+    column-gap: 0;
     
     a {
-      display: inline-flex;
-      flex-grow: 1;
-      width: 12%;
-      max-height: 80px;
+      display: flex;
+      break-inside: avoid;
       
       img {
         object-fit: cover;
         border-radius: 4px;
         border: whitesmoke 1px solid;
+      }
+      
+      .very-small {
+        height: 72px;
+      }
+      .small {
+        height: 88px;
+      }
+      .medium {
+        height: 120px;
+      }
+      .large {
+        height: 192px;
+      }
+      .very-large {
+        height: 288px;
       }
     }
   }
