@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 })
 
 document.addEventListener('click', function (event) {
-  console.log(event);
   
     // click on a header link
     if( event.target.matches('.header a') ) {
@@ -30,15 +29,17 @@ document.addEventListener('click', function (event) {
   
     // click on gallery expand button
     if( event.target.matches('#gallery-expand-button') ) {
-      console.log('Voir plus !');
       // Don't follow the link
       event.preventDefault();
 
       var gallery = document.getElementById('animated-thumbnails');
+      var button = document.getElementById('gallery-expand-button');
       if (gallery.classList.contains('full')) {
         gallery.classList.remove('full');
+        button.innerHtml = 'Voir plus';
       } else {
         gallery.classList.add('full');
+        button.innerHtml = 'Voir moins';
       }
     }
 
