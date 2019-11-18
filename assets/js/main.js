@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 })
 
 document.addEventListener('click', function (event) {
+  console.log(event);
+  
     // click on a header link
     if( event.target.matches('.header a') ) {
       // Don't follow the link
