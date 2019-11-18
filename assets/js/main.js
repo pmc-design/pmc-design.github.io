@@ -36,10 +36,10 @@ document.addEventListener('click', function (event) {
       var button = document.getElementById('gallery-expand-button');
       if (gallery.classList.contains('full')) {
         gallery.classList.remove('full');
-        button.innerHtml = 'Voir plus';
+        button.innerHTML = 'Voir plus';
       } else {
         gallery.classList.add('full');
-        button.innerHtml = 'Voir moins';
+        button.innerHTML = 'Voir moins';
       }
     }
 
