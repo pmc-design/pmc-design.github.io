@@ -30,6 +30,7 @@ document.addEventListener('click', function (event) {
   
     // click on gallery expand button
     if( event.target.matches('#gallery-expand-button') ) {
+      console.log('Voir plus !');
       // Don't follow the link
       event.preventDefault();
 
