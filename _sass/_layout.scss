@@ -101,7 +101,7 @@ section#principal {
   
   .content {
     padding: 8px 16px;
-    text-align: justify;
+    text-align: center;
     
     h1 {
       margin-bottom: 8px;
@@ -109,7 +109,7 @@ section#principal {
   }
 }
 
-section#themes {
+/* section#themes {
   z-index: 180;
   
   h1 {
@@ -177,10 +177,10 @@ section#themes {
       z-index: 20;
     }
   }
-}
+}*/
 
 section#galerie {
-  z-index: 160;
+  z-index: 180;
   
   h1 {
       text-align: center;
@@ -258,6 +258,15 @@ section#galerie {
     width: fit-content;
     align-self: flex-end;
     margin-right: 16px;
+  }
+}
+
+section#description {
+  z-index: 160;
+  
+  .content {
+    border-left: 1px solid grey;
+    padding-left: 12px;
   }
 }
 
