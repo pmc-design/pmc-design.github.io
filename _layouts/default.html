@@ -2,26 +2,47 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
     <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="description" content="{{ site.description }}">
+    
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:type" content="Dessinateur CAO" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:image" content="{{ '/assets/img/grand_logo_pmc.png' | relative_url }}" />
+    
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/img/grand_logo_pmc.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap">
+    <link rel="stylesheet" href="{{ '/assets/css/lightgallery.min.css' | relative_url }}">
+    <link rel="icon" type="image/png" href="{{ '/assets/img/grand_logo_pmc.png' | relative_url }}" />
+    
   </head>
   
   <body>
   
-    <header>
+    <header role="banner">
       {% include header.html %}
     </header>
-  
-    {{ content }}
     
-    <footer>
+    <main role="main">
+      {{ content }}
+    </main>
+    
+    <footer role="contentinfo">
       {% include footer.html %}
     </footer>
+  
     
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    
+    <!-- lightgallery -->
+    <script src="{{ '/assets/js/lightgallery.min.js' | relative_url }}"></script>
+    <!-- lightgallery plugins -->
+    <script src="{{ '/assets/js/lg-thumbnail.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/lg-fullscreen.min.js' | relative_url }}"></script>
   </body>
 </html>

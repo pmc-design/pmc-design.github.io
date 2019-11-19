@@ -1,14 +1,78 @@
-
 body {
-  font-family: Source Sans Pro;
+  
+  font-family: Source Sans Pro, system-ui;
+  
+  a, a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  header {
+    font-weight: bolder;
+    
+    a {
+      text-shadow: 0px 0px 2px black;
+    }
+    a:hover {
+      text-shadow: unset;
+    }
+  }
   
   footer {
     font-size: 80%;
   }
+  
+  section {
+    h1 {
+      text-shadow: 0px 0px 12px white;
+      font-weight: normal;
+      font-family: 'Pacifico', cursive;
+      font-size: 1.8rem;
+    }
+    
+    article .titre {
+      font-style: italic;
+      line-height: 1.2;
+    }
+  
+    fieldset {
+      font-style: italic;
+
+      button {
+        font-style: normal;
+      }
+    }
+  }
 }
 
+// on big screens
 @media only screen and (min-device-width: 720px) {
   body {
     font-size: 120%;
+    
+    section {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+// on small screens
+@media only screen and (max-device-width: 560px) {
+  body {
+    header {
+      font-size: small;
+    }
+
+    footer {
+      font-size: 75%;
+    }
+    
+    section {
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
   }
 }

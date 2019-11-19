@@ -1,51 +1,54 @@
 ---
 layout: default
-title: P.M.C. Design
+title: P.M.Conception Design
 ---
 
 <section id="principal">
   <img src="{{ '/assets/img/grand_logo_pmc.png' | relative_url }}" alt="">
-
-  <div class="content">
-    <p>Vous envisagez de construire votre maison, de l'agrandir, ou de rénover un bâtiment ?</p>
-    <div>Vous avez besoin d'aide pour la conception de vos plans ou le montage des dossiers necessaires aux démarches administratives ?</div>
-  </div>
 </section>
 
-<section id="themes">
+<!--<section id="themes">
   <h1>
-    5 grands thèmes
+    5 thèmes
   </h1>
   <div class="content themes">
     <article>
+      <img src="{{ '/assets/gallery/pic_(1).jpg' | relative_url }}" alt="Avant projet">
       <div class="titre">Avant projet</div>
-      <img src="{{ '/assets/gallery/pic_(1).jpg' | relative_url }}" alt="">
     </article>
     <article>
+      <img src="{{ '/assets/gallery/pic_(13).jpg' | relative_url }}" alt="Relevés des existants">
       <div class="titre">Relevés des existants</div>
-      <img src="{{ '/assets/gallery/pic_(13).jpg' | relative_url }}" alt="">
     </article>
     <article>
+      <img src="{{ '/assets/gallery/pic_(2).jpg' | relative_url }}" alt="Permis de construire">
       <div class="titre">Permis de construire</div>
-      <img src="{{ '/assets/gallery/pic_(2).jpg' | relative_url }}" alt="">
     </article>
     <article>
+      <img src="{{ '/assets/gallery/pic_(7).jpg' | relative_url }}" alt="Plan pour appel d'offre">
       <div class="titre">Plan pour appel d'offre</div>
-      <img src="{{ '/assets/gallery/pic_(7).jpg' | relative_url }}" alt="">
     </article>
     <article>
+      <img src="{{ '/assets/gallery/pic_(6).jpg' | relative_url }}" alt="Imageries">
       <div class="titre">Imageries</div>
-      <img src="{{ '/assets/gallery/pic_(6).jpg' | relative_url }}" alt="">
     </article>
+  </div>
+</section>-->
+
+<section id="galerie">
+  <h1>
+    Mes réalisations
+  </h1>
+  <div class="content">
+    {% include gallery.html %}
   </div>
 </section>
 
-<section id="gallerie">
-  <h1>
-    Gallerie
-  </h1>
+<section id="description">
+  <h1>{{ page.title }}</h1>
   <div class="content">
-    Gallerie de photos
+    <p>Vous envisagez de construire votre maison, de l'agrandir, ou de rénover un bâtiment ?</p>
+    <p>Vous avez besoin d'aide pour la conception de vos plans ou le montage des dossiers necessaires aux démarches administratives ?</p>
   </div>
 </section>
 
