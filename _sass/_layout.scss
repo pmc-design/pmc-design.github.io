@@ -255,16 +255,13 @@ section#galerie {
 section#description {
   z-index: 160;
   
+  h1 {
+    text-align: center;
+  }
+  
   .content {
-    h1 {
-      text-align: center;
-      margin-bottom: 8px;
-    }
-    
-    .text {
-      border-left: 1px solid grey;
-      padding-left: 12px;
-    }
+    border-left: 1px solid grey;
+    padding-left: 12px;
   }
   
   .content {
