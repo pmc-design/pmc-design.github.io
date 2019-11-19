@@ -221,6 +221,11 @@ section#galerie {
     margin-right: -10%;
   }
   
+  .content {
+    display: flex;
+    flex-flow: column;
+  }
+  
   #animated-thumbnails {
     column-count: 5;
     column-gap: 0;
@@ -262,6 +267,12 @@ section#galerie {
   #animated-thumbnails.full {
     height: 880px;
   }
+  
+  button.expand-button {
+    width: fit-content;
+    align-self: flex-end;
+    margin-right: 16px;
+  }
 }
 
 section#contact {
@@ -287,7 +298,7 @@ section#contact {
     .contact-form {
       flex-grow: 1;
       margin: auto;
-      max-width: 450px;
+      max-width: 480px;
 
       fieldset {
         border: transparent;
