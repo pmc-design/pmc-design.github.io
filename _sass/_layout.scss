@@ -4,15 +4,14 @@ body {
   flex-flow: column;
   max-width: 980px;
   margin: 24px auto 0;
-  background:         linear-gradient(30deg, white, #b5b5b5d4), url(../img/background.png);
-  background: -webkit-linear-gradient(30deg, white, #b5b5b5d4), url(../img/background.png);
+  background: linear-gradient(30deg, white, #b5b5b5d4), url(../img/background.png);
   background-size: contain;
   background-attachment: fixed;
 }
 
 header {
-  position: sticky;
   position: -webkit-sticky;
+  position:         sticky;
   top: 4px;
   z-index: 1000;
   color: whitesmoke;
@@ -93,38 +92,15 @@ section {
 }
 
 section#principal {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
   z-index: 200;
   
   img {
-    flex-grow: 1;
-    width: 20%;
-    padding: 0 24px;
-    min-width: 128px;
-    max-width: 256px;
+    max-width: 128px;
     margin: auto;
-  }
-  
-  .content {
-    padding: 8px 16px;
-    border-left: 1px solid grey;
-    text-align: justify;
-    flex-grow: 1;
-    width: 75%;
-    
-    h1 {
-      margin-bottom: 8px;
-    }
-    
-    a:hover {
-      color: #0366d6;
-    }
   }
 }
 
-section#themes {
+/* section#themes {
   z-index: 180;
   
   h1 {
@@ -173,7 +149,7 @@ section#themes {
 
       img {
         opacity: 0.85;
-        transition: transform .25s ease;
+        transition: all .25s ease;
         box-shadow: 3px 3px 12px grey;
         border-radius: 50%;
         padding: 4px;
@@ -192,21 +168,54 @@ section#themes {
       z-index: 20;
     }
   }
-}
+}*/
 
 section#galerie {
-  z-index: 160;
+  z-index: 180;
+  
+  h1 {
+      text-align: center;
+      overflow: hidden;
+    }
+
+  h1:before, h1:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+  }
+
+  h1:before {
+    right: 24px;
+    margin-left: -10%;
+  }
+
+  h1:after {
+    left: 24px;
+    margin-right: -10%;
+  }
+  
+  .content {
+    display: flex;
+    flex-flow: column;
+  }
   
   #animated-thumbnails {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    column-count: 5;
+    column-gap: 0;
+    height: 320px;
+    overflow: hidden;
+    -webkit-transition: all 1s ease-in-out !important;
+    -moz-transition: all 1s ease-in-out !important;
+    -o-transition: all 1s ease-in-out !important;
+    transition: all 1s ease-in-out !important;
     
     a {
-      display: inline-flex;
-      flex-grow: 1;
-      width: 12%;
-      max-height: 80px;
+      display: flex;
+      break-inside: avoid;
       
       img {
         object-fit: cover;
@@ -214,6 +223,49 @@ section#galerie {
         border: whitesmoke 1px solid;
       }
     }
+    
+    .very-small {
+      height: 72px;
+    }
+    .small {
+      height: 88px;
+    }
+    .medium {
+      height: 120px;
+    }
+    .large {
+      height: 192px;
+    }
+    .very-large {
+      height: 288px;
+    }
+  }
+  
+  #animated-thumbnails.full {
+    height: 880px;
+  }
+  
+  button.expand-button {
+    width: fit-content;
+    align-self: flex-end;
+    margin-right: 16px;
+  }
+}
+
+section#description {
+  z-index: 160;
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .content {
+    border-left: 1px solid grey;
+    padding-left: 12px;
+  }
+  
+  .content {
+    
   }
 }
 
@@ -226,21 +278,19 @@ section#contact {
 
     .contact-img {
       flex-grow: 1;
-      max-width: 30%;
-      text-align: end;
-      padding: 5%;
 
       img {
         width: 75%;
-        max-width: 140px;
+        max-width: 80px;
         opacity: 0.6;
+        margin: auto;
       }
     }
 
     .contact-form {
-      flex-grow: 1;
+      flex-grow: 4;
       margin: auto;
-      max-width: 450px;
+      max-width: 580px;
 
       fieldset {
         border: transparent;
@@ -295,11 +345,21 @@ section#aPropos {
   
   section#principal {
     img {
-      flex-grow: 0.5;
+      
     }
   }
   
-  section#themes {
+  section#galerie {
+    #animated-thumbnails {
+      column-count: 3;
+    }
+    
+    #animated-thumbnails.full {
+      height: 1440px;
+    }
+  }
+  
+  /*section#themes {
     .themes {
       article {
         img {
@@ -307,7 +367,7 @@ section#aPropos {
         }
       }
     }
-  }
+  }*/
 }
 
 /* Helpers */
