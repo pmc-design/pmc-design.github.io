@@ -279,19 +279,18 @@ section#contact {
 
     .contact-img {
       flex-grow: 1;
-      max-width: 30%;
-      text-align: end;
       padding: 5%;
 
       img {
         width: 75%;
-        max-width: 140px;
+        max-width: 80px;
         opacity: 0.6;
+        margin: auto;
       }
     }
 
     .contact-form {
-      flex-grow: 1;
+      flex-grow: 4;
       margin: auto;
       max-width: 480px;
 
