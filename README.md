@@ -1,4 +1,6 @@
-<a href="https://pmc-design.github.io" target="_blank"><img align="left" src="https://raw.githubusercontent.com/dorianbayart/PMC-Design/master/assets/img/grand_logo_pmc_original.png" alt="Logo PMC Design" width="250"/></a>
+<a href="https://pmc-design.github.io" target="_blank">
+  <img align="left" src="./assets/img/grand_logo_pmc_original.png" alt="Logo PMC Design" width="250"/>
+</a>
 
 # P.M.C. Design
 
