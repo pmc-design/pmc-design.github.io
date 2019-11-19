@@ -15,8 +15,8 @@
     
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap">
     <link rel="stylesheet" href="{{ '/assets/css/lightgallery.min.css' | relative_url }}">
     <link rel="icon" type="image/png" href="assets/img/grand_logo_pmc.png" />
     
@@ -24,13 +24,15 @@
   
   <body>
   
-    <header>
+    <header role="banner">
       {% include header.html %}
     </header>
-  
-    {{ content }}
     
-    <footer>
+    <main role="main">
+      {{ content }}
+    </main>
+    
+    <footer role="contentinfo">
       {% include footer.html %}
     </footer>
   
