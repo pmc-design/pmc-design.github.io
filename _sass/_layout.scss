@@ -348,11 +348,21 @@ section#aPropos {
   
   section#principal {
     img {
-      flex-grow: 0.5;
+      
     }
   }
   
-  section#themes {
+  section#galerie {
+    #animated-thumbnails {
+      column-count: 3;
+    }
+    
+    #animated-thumbnails.full {
+      height: 1440px;
+    }
+  }
+  
+  /*section#themes {
     .themes {
       article {
         img {
@@ -360,7 +370,7 @@ section#aPropos {
         }
       }
     }
-  }
+  }*/
 }
 
 /* Helpers */
