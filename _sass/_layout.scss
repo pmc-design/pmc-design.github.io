@@ -95,17 +95,8 @@ section#principal {
   z-index: 200;
   
   img {
-    max-width: 256px;
+    max-width: 128px;
     margin: auto;
-  }
-  
-  .content {
-    padding: 8px 16px;
-    text-align: center;
-    
-    h1 {
-      margin-bottom: 8px;
-    }
   }
 }
 
@@ -265,8 +256,19 @@ section#description {
   z-index: 160;
   
   .content {
-    border-left: 1px solid grey;
-    padding-left: 12px;
+    h1 {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    
+    .text {
+      border-left: 1px solid grey;
+      padding-left: 12px;
+    }
+  }
+  
+  .content {
+    
   }
 }
 
