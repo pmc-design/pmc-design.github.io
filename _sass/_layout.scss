@@ -12,11 +12,10 @@ body {
 header {
   position: -webkit-sticky;
   position:         sticky;
-  top: 4px;
+  top: 0;
   z-index: 1000;
   color: whitesmoke;
   background-color: rgba(130, 130, 130, 0.95);
-  border-radius: 8px;
   height: 56px;
   display: flex;
   align-items: center;
@@ -41,7 +40,6 @@ header {
     a:hover {
       color: black;
       background-color: whitesmoke;
-      border-radius: 4px;
     }
   }
 }
