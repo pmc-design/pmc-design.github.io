@@ -12,11 +12,10 @@ body {
 header {
   position: -webkit-sticky;
   position:         sticky;
-  top: 4px;
+  top: 0;
   z-index: 1000;
   color: whitesmoke;
-  background-color: rgba(130, 130, 130, 0.95);
-  border-radius: 8px;
+  background-color: rgba(100, 100, 100, 0.95);
   height: 56px;
   display: flex;
   align-items: center;
@@ -41,7 +40,6 @@ header {
     a:hover {
       color: black;
       background-color: whitesmoke;
-      border-radius: 4px;
     }
   }
 }
@@ -219,8 +217,8 @@ section#galerie {
       
       img {
         object-fit: cover;
-        border-radius: 4px;
-        border: whitesmoke 1px solid;
+        width: 100%;
+        border: whitesmoke 0.5px solid;
       }
     }
     
@@ -310,6 +308,11 @@ section#aPropos {
   
   .content {
     text-align: justify;
+  }
+  
+  .signature {
+    text-align: end;
+    margin-top: 2em;
   }
 }
 
