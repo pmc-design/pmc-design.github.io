@@ -224,13 +224,13 @@ section#galerie {
         }
 
         .very-small {
-            height: 72px;
+            height: 76px;
         }
         .small {
-            height: 88px;
+            height: 96px;
         }
         .medium {
-            height: 120px;
+            height: 128px;
         }
         .large {
             height: 192px;
@@ -241,13 +241,23 @@ section#galerie {
     }
 
     #animated-thumbnails.full {
-        height: 1300px;
+        height: 1400px;
     }
 
     button.expand-button {
         width: fit-content;
         align-self: flex-end;
         margin-right: 16px;
+    }
+}
+
+section#description {
+    z-index: 165;
+
+    .content {
+        a {
+            text-decoration: underline;
+        }
     }
 }
 
