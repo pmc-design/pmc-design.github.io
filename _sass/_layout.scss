@@ -255,6 +255,9 @@ section#book {
     z-index: 165;
 
     .content {
+        display: flex;
+        flex-flow: column;
+
         a {
             text-decoration: underline;
         }
