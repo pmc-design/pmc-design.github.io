@@ -98,76 +98,6 @@ section#principal {
     }
 }
 
-/* section#themes {
-  z-index: 180;
-
-  h1 {
-      text-align: center;
-      overflow: hidden;
-    }
-
-  h1:before, h1:after {
-    background-color: #000;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 10%;
-  }
-
-  h1:before {
-    right: 24px;
-    margin-left: -10%;
-  }
-
-  h1:after {
-    left: 24px;
-    margin-right: -10%;
-  }
-
-  .themes {
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
-
-    article {
-      z-index: 10;
-      flex: 20%;
-      flex-grow: 0;
-      min-width: 120px;
-      margin: 24px auto 0;
-      padding: 0 4px;
-      align-self: baseline;
-
-      .titre {
-        text-align: center;
-        margin-bottom: 16px;
-      }
-
-      img {
-        opacity: 0.85;
-        transition: all .25s ease;
-        box-shadow: 3px 3px 12px grey;
-        border-radius: 50%;
-        padding: 4px;
-        background-color: whitesmoke;
-        object-fit: cover;
-        height: 112px;
-        width: 100%;
-      }
-
-      img:hover {
-        opacity: 1;
-        transform: scale(1.3);
-      }
-    }
-    article:hover {
-      z-index: 20;
-    }
-  }
-}*/
-
 section#galerie {
     z-index: 180;
 
@@ -260,6 +190,11 @@ section#book {
 
         a {
             text-decoration: underline;
+            display: inline-flex;
+            justify-content: center;
+        }
+        a:hover {
+            opacity: 0.85;
         }
     }
 }
@@ -274,9 +209,6 @@ section#description {
     .content {
         border-left: 1px solid grey;
         padding-left: 12px;
-    }
-
-    .content {
     }
 }
 
@@ -361,11 +293,6 @@ section#aPropos {
         margin: -56px 12px 12px;
     }
 
-    section#principal {
-        img {
-        }
-    }
-
     section#galerie {
         #animated-thumbnails {
             column-count: 3;
@@ -375,16 +302,6 @@ section#aPropos {
             height: 1440px;
         }
     }
-
-    /*section#themes {
-    .themes {
-      article {
-        img {
-          height: 96px;
-        }
-      }
-    }
-  }*/
 }
 
 /* Helpers */
